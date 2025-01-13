@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Priti</title>
+    <style>
+        /* General Reset */
+        
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        }
+        /* Navigation Bar */
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        
+        .navbar h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        
+        .navbar .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .navbar .nav-buttons a {
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 1rem;
+            color: white;
+            background-color: #ff6b6b;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .navbar .nav-buttons a:hover {
+            background-color: #d64d4d;
+        }
+        /* Main Content */
+        
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            z-index: 1;
+            overflow: hidden;
+        }
+        
+        .message {
+            color: #fff;
+            margin-top: 80px;
+            /* Account for navbar height */
+            animation: fadeIn 3s ease forwards;
+            opacity: 0;
+            height: 50vh;
+            width: 80%;
+            overflow-y: auto;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .message::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .message::-webkit-scrollbar-thumb {
+            background-color: #ff6b6b;
+            border-radius: 10px;
+        }
+        
+        .message::-webkit-scrollbar-track {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        
+        .message h1 {
+            font-size: 4rem;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .message h2 {
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
+        
+        .balloons {
+            position: absolute;
+            bottom: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+        
+        .balloon {
+            position: absolute;
+            width: 60px;
+            height: 80px;
+            background: radial-gradient(circle, #ff6b6b, #d64d4d);
+            border-radius: 50%;
+            animation: float 8s linear infinite;
+        }
+        
+        .balloon:before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            width: 2px;
+            height: 50px;
+            background: #fff;
+            transform: translateX(-50%);
+        }
+        
+        .balloon:nth-child(1) {
+            left: 10%;
+            animation-delay: 0s;
+        }
+        
+        .balloon:nth-child(2) {
+            left: 30%;
+            animation-delay: 2s;
+            background: radial-gradient(circle, #ffa36c, #d6794d);
+        }
+        
+        .balloon:nth-child(3) {
+            left: 50%;
+            animation-delay: 4s;
+            background: radial-gradient(circle, #6bc1ff, #4d95d6);
+        }
+        
+        .balloon:nth-child(4) {
+            left: 70%;
+            animation-delay: 1s;
+            background: radial-gradient(circle, #9eff6b, #6bd64d);
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(100vh);
+                /* Start at the bottom of the viewport */
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px);
+                /* Move above the top of the viewport */
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <h1>Happy Birthday</h1>
+        <div class="nav-buttons">
+            <a href="#">Home of Us</a>
+            <a href="#">Login to my Hart</a>
+            <a href="#">Registration with my Family</a>
+        </div>
+    </div>
+    <audio autoplay loop>
+        <source src="SZA - Saturn.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="message">
+            <h1>🎉 Happy Birthday, Priti! 🎉</h1>
+            <h2>Wishing you a day filled with love, laughter, and endless joy! 💖</h2>
+            <br>
+            <h4>.</h4>
+            <br>
+            <h4>.</h4>
+            <br>
+            <h4>.</h4>
+            <br>
+            <h4>.</h4>
+            <br>
+            <h4>.</h4>
+            <br>
+            <h4>.</h4>
+            <br>
+            <h4>.</h4>
+            <br>
+            <h4>.</h4>
+            <br>
+            <h4>.</h4>
+            <br>
+            <h4>.</h4>
+            <br>
+            <h4>.</h4>
+            <h2>That's so sweet! Here's a heartfelt birthday message you can share with Priti: --- **Happy Birthday, Priti! ❤️** It’s been only 1.5 months since you entered my life, yet it feels like I’ve known you forever. Even though there’s distance between
+                us, my heart beats closer to yours every single day. You’ve brought so much light, love, and happiness into my world in such a short time, and I can’t imagine life without you anymore. On your special day, I wish I could be there to hold
+                your hand, see your beautiful smile, and celebrate *you*—the most amazing person I’ve ever met. But until that moment comes, I want you to know how deeply I care for you and how much I’m looking forward to the memories we’ll create together.
+                Priti, you deserve every ounce of happiness this world has to offer, and I promise to do everything I can to be the reason behind your smiles. So, today, celebrate *yourself*—because you’re the kind of person who makes the world a better
+                place just by being in it. Happy Birthday, my love. Here’s to many more birthdays together, no matter the distance. I’m with you in spirit, and my heart is all yours, always. With all my love </h2>
+
+
+
+            <br>
+            <h1>Your Adi ....</h1>
+        </div>
+        <div class="balloons">
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
